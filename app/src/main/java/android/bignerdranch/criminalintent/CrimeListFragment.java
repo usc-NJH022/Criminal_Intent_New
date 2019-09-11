@@ -21,16 +21,18 @@ import java.util.List;
 
 public class CrimeListFragment extends Fragment {
 
-    private RecyclerView mCrimeRecyclerView;
-    private CrimeAdapter mAdapter;
-    private boolean mSubtitleVisible;
-    private static final String SAVED_SUBTITLE_VISIBLE = "subtitle";
+    private RecyclerView mCrimeRecyclerView; // change to mActivityRecyclerView
+    private CrimeAdapter mAdapter; // change to ActivityAdapter
+    private boolean mSubtitleVisible; // Stay same
+    private static final String SAVED_SUBTITLE_VISIBLE = "subtitle"; // stay sane
 
+    //Stay the same
     @Override
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setHasOptionsMenu(true);
     }
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
